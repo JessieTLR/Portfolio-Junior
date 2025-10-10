@@ -1,0 +1,165 @@
+@font-face {
+  font-family: "font1";
+  src: url(../../../font/Cascadia_Code/Cascadia_Code/static/CascadiaCode-Medium.ttf);
+}
+:root {
+  --color-bg: #0f0f0f;
+  --color-text: #f2f2f2;
+  --color-text-secondary: #cccccc;
+  --color-accent: #ff5c5c;
+  --color-hover: #ffd166;
+}
+
+body {
+  font-family: "font1", sans-serif;
+  background: rgb(11, 68, 77);
+  color: var(--color-text);
+}
+
+h1, h2, h3 {
+  color: var(--color-text);
+}
+
+button {
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  background: transparent;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+a {
+  color: var(--color-accent);
+  background: transparent;
+  padding: 20px 20px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+a:hover, button:hover {
+  color: var(--color-hover);
+  border-color: var(--color-hover);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  position: relative;
+  background-image: url("../../../../Backgrounds/ROUGE.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+body .header {
+  position: relative;
+}
+body .header .left-container {
+  position: absolute;
+  width: 60%;
+  opacity: 20%;
+}
+body .header .left-container img {
+  position: absolute;
+  width: 70%;
+  height: 100vh;
+  pointer-events: none;
+}
+body .header .right-container {
+  padding-top: 250px;
+}
+body .header .right-container h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 5rem;
+}
+body .header .right-container h1 span {
+  display: inline-block;
+}
+body .header .right-container h1 span.blinking-dot {
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+  animation: blink 2s infinite;
+}
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+body .header .right-container h2 {
+  text-align: center;
+  margin: 40px;
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+body .header .right-container h2 span {
+  font-size: 2.5rem;
+  color: var(--color-hover);
+}
+body .header .right-container ul.languagesUl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .header .right-container ul.languagesUl li.languagesLi {
+  padding: 40px;
+  color: var(--color-accent);
+  padding-bottom: 100px;
+}
+body .header .right-container .projet {
+  position: absolute;
+  left: 46%;
+  background-color: var(--color-accent);
+  color: var(--color-text);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+body .header .right-container .projet:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  background-color: var(--color-hover);
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}/*# sourceMappingURL=style.css.map */
