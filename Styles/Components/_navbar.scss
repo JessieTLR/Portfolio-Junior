@@ -1,9 +1,40 @@
 .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 9999;
+  padding: 1.2rem 0;
 
-        ul{
-            display: flex;
-        align-items: center;
-        justify-content: center;
-        }
-        
-    }
+  .navUl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .navli {
+  color: var(--color-accent);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  text-shadow: none;
+  transform: translateZ(0);
+
+
+  &:hover {
+    color: var(--color-hover);
+    transform: scale(1.05) translateZ(0);
+  }
+
+  &.active {
+    color: var(--color-hover);
+    font-weight: 600;
+    padding-bottom: 3px;
+  }
+}
+
+}

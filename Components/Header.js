@@ -1,6 +1,4 @@
 import React from "react";
-
-import NavBar from "./NavBar";
 import Codefond from "../Assets/Codefond.png";
 
 const Header = () => {
@@ -23,7 +21,6 @@ const Header = () => {
           <li className="languagesLi">React</li>
         </ul>*/}
         {/*<button className="projet">Voir mes projets</button>*/}
-        <NavBar />
       </div>
     </div>
   );
