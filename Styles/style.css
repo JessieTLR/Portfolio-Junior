@@ -54,13 +54,13 @@ li {
 }
 
 .nav {
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
   width: 100%;
   background: transparent;
-  z-index: 9999;
   padding: 1.2rem 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
 }
 .nav .navUl {
   display: flex;
@@ -73,18 +73,15 @@ li {
   cursor: pointer;
   font-weight: 500;
   font-size: 1rem;
-  letter-spacing: 0.5px;
   transition: color 0.3s ease, transform 0.3s ease;
-  text-shadow: none;
-  transform: translateZ(0);
 }
 .nav .navli:hover {
   color: var(--color-hover);
-  transform: scale(1.05) translateZ(0);
+  transform: scale(1.05);
 }
 .nav .navli.active {
   color: var(--color-hover);
-  font-weight: 600;
+  border-bottom: 2px solid var(--color-hover);
   padding-bottom: 3px;
 }
 

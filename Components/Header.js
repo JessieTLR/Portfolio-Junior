@@ -1,7 +1,14 @@
 import React from "react";
 import Codefond from "../Assets/Codefond.png";
+import NavBar from "./NavBar";
 
-const Header = () => {
+const Header = ({
+  activeSection,
+  scrollToHome,
+  scrollToAbout,
+  scrollToProjects,
+  scrollToContact,
+}) => {
   return (
     <div className="header">
       <div className="left-container">
@@ -21,6 +28,13 @@ const Header = () => {
           <li className="languagesLi">React</li>
         </ul>*/}
         {/*<button className="projet">Voir mes projets</button>*/}
+        <NavBar
+          activeSection={activeSection}
+          scrollToHome={scrollToHome}
+          scrollToAbout={scrollToAbout}
+          scrollToProjects={scrollToProjects}
+          scrollToContact={scrollToContact}
+        />
       </div>
     </div>
   );

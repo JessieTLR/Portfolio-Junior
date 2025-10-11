@@ -4,7 +4,6 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
-import NavBar from "./Components/NavBar";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -75,14 +74,6 @@ function App() {
 
   return (
     <div className="scroll">
-      <NavBar
-        activeSection={activeSection}
-        scrollToHome={() => scrollToSection(homeRef)}
-        scrollToAbout={() => scrollToSection(aboutRef)}
-        scrollToProjects={() => scrollToSection(projectsRef)}
-        scrollToContact={() => scrollToSection(contactRef)}
-      />
-
       <section id="home" ref={homeRef}>
         <Home />
       </section>
