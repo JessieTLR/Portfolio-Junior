@@ -7,44 +7,45 @@ const Experiences = () => {
 
   const exp = [
     {
-      title: "💻 Formation Développement Web",
+      title: "Formation Développement Web",
       details: (
         <>
           <p>
-            <strong>Organisme :</strong> OpenClassRoom / FromScratch
+            <strong>Organismes :</strong> OpenClassRoom / FromScratch
           </p>
           <p>
             <strong>Période :</strong> 2025 – aujourd'hui
           </p>
           <p>
-            Compétences : HTML, CSS, JavaScript, React en formation continu
-            <br />
-            Projet final : création d’un site portfolio responsive.
+            <strong>Compétences : </strong>HTML, CSS, JavaScript, React en
+            formation continu
           </p>
         </>
       ),
     },
     {
-      title: "🌱 Chargée de mission Développement Durable",
+      title: "Chargée de mission Développement Durable",
       details: (
         <>
           <p>
-            <strong>Organisation :</strong> CC du Frontonnais / des Hauts
-            Tolosans
+            <strong>Organisation :</strong> Communautés de communes du
+            Frontonnais et des Hauts Tolosans
           </p>
           <p>
             <strong>Période :</strong> 2015 – Aujourd'hui
           </p>
           <ul>
-            <li>Gestion de projet</li>
-            <li>Création et suivi d'évènement</li>
+            <strong>Compétences acquises :</strong>
+            <li>Gestion de projets</li>
+            <li>Création et suivi d'évènements</li>
             <li>Travail en équipe</li>
+            <li>Autonomie</li>
           </ul>
         </>
       ),
     },
     {
-      title: "🎓 Master Développement Durable",
+      title: "Master Développement Durable",
       details: (
         <>
           <p>
@@ -81,7 +82,7 @@ const Experiences = () => {
             onClick={() => toggleAccordion(index)}
           >
             {exp.title}
-            <span className="arrow">{activeIndex === index ? "▲" : "▼"}</span>
+            <span className="arrow">{activeIndex === index ? " ▲" : " ▼"}</span>
           </button>
           <div className="accordion-content">
             {activeIndex === index && (

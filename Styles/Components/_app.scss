@@ -1,0 +1,51 @@
+.parallax-container {
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+  height: 100vh;
+  scroll-behavior: smooth;
+
+  section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.25); // léger assombrissement pour lisibilité
+      z-index: 0;
+    }
+
+    > * {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  // SECTION HOME
+  #home {
+    background: url("../../../../Backgrounds/ROUGE.jpg") center/cover fixed no-repeat;
+  }
+
+  // SECTION ABOUT
+  #about {
+    background: linear-gradient(180deg, #0d0d0d, #1a1a1a);
+  }
+
+  // SECTION PROJECTS
+  #projects {
+    background: url("../../../../Backgrounds/ROUGE.jpg") center/cover fixed no-repeat;
+  }
+
+  // SECTION CONTACT
+  #contact {
+    background-color: #0f0f0f;
+  }
+}

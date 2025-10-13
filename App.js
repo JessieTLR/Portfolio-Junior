@@ -4,6 +4,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
+import "../src/Styles/Components/_app.scss";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -73,7 +74,7 @@ function App() {
   }, []);
 
   return (
-    <div className="scroll">
+    <div className="parallax-container">
       <section id="home" ref={homeRef}>
         <Home />
       </section>

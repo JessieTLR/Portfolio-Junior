@@ -21,7 +21,7 @@ const NavBar = ({
           className={`navli ${activeSection === "about" ? "active" : ""}`}
           onClick={scrollToAbout}
         >
-          // Mon histoire
+          // Mon parcours
         </li>
         <li
           className={`navli ${activeSection === "projects" ? "active" : ""}`}
