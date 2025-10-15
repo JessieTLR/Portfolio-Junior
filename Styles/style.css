@@ -194,6 +194,7 @@ body .header .right-container h1 {
   padding: 20px;
   font-size: 7rem;
   position: relative;
+  color: var(--color-text);
 }
 body .header .right-container h1 span {
   display: inline-block;
@@ -381,4 +382,8 @@ body .header .right-container .projet:hover {
 }
 .experiences .accordion-item .arrow.active {
   transform: rotate(180deg);
+}
+
+h1 {
+  color: red;
 }/*# sourceMappingURL=style.css.map */
