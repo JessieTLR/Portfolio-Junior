@@ -5,6 +5,7 @@ import About from "./Pages/About";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import "../src/Styles/Components/_app.scss";
+import NavBar from "./Components/NavBar";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -74,23 +75,33 @@ function App() {
   }, []);
 
   return (
-    <div className="parallax-container">
-      <section id="home" ref={homeRef}>
-        <Home />
-      </section>
+    <>
+      <NavBar
+        activeSection={activeSection}
+        scrollToHome={() => scrollToSection(homeRef)}
+        scrollToAbout={() => scrollToSection(aboutRef)}
+        scrollToProjects={() => scrollToSection(projectsRef)}
+        scrollToContact={() => scrollToSection(contactRef)}
+      />
 
-      <section id="about" ref={aboutRef}>
-        <About />
-      </section>
+      <div className="parallax-container">
+        <section id="home" ref={homeRef}>
+          <Home />
+        </section>
 
-      <section id="projects" ref={projectsRef}>
-        <Projects />
-      </section>
+        <section id="about" ref={aboutRef}>
+          <About />
+        </section>
 
-      <section id="contact" ref={contactRef}>
-        <Contact />
-      </section>
-    </div>
+        <section id="projects" ref={projectsRef}>
+          <Projects />
+        </section>
+
+        <section id="contact" ref={contactRef}>
+          <Contact />
+        </section>
+      </div>
+    </>
   );
 }
 
