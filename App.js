@@ -4,11 +4,12 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
-import "../src/Styles/Components/_app.scss";
 import NavBar from "./Components/NavBar";
+import "../src/Styles/Components/_app.scss";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
+  const [navState, setNavState] = useState("home");
 
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
@@ -56,17 +57,18 @@ function App() {
     };
   }, [activeSection]);
 
-  // Gestion du tout en haut ou tout en bas
+  // Gestion du comportement de la NavBar selon la position du scroll
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const windowHeight = window.innerHeight;
-      const bodyHeight = document.body.offsetHeight;
+      const homeHeight = homeRef.current?.offsetHeight || 0;
 
-      if (scrollY === 0) {
-        setActiveSection("home");
-      } else if (scrollY + windowHeight >= bodyHeight - 5) {
-        setActiveSection("contact");
+      if (scrollY < homeHeight * 0.2) {
+        setNavState("home"); // visible à 38em
+      } else if (scrollY >= homeHeight * 0.2 && scrollY < homeHeight * 0.9) {
+        setNavState("hidden"); // disparaît pendant le scroll de home
+      } else if (scrollY >= homeHeight * 0.9) {
+        setNavState("top"); // fixée en haut dès about
       }
     };
 
@@ -78,6 +80,7 @@ function App() {
     <>
       <NavBar
         activeSection={activeSection}
+        navState={navState}
         scrollToHome={() => scrollToSection(homeRef)}
         scrollToAbout={() => scrollToSection(aboutRef)}
         scrollToProjects={() => scrollToSection(projectsRef)}

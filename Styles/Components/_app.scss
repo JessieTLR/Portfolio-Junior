@@ -2,7 +2,8 @@
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 1px;
-  height: 100vh;
+  min-height: 100vh;
+  height:auto;
   scroll-behavior: smooth;
 
   section {

@@ -3,13 +3,14 @@ import "../Styles/Components/_navbar.scss";
 
 const NavBar = ({
   activeSection,
+  navState,
   scrollToHome,
   scrollToAbout,
   scrollToProjects,
   scrollToContact,
 }) => {
   return (
-    <nav className="nav">
+    <nav className={`nav nav--${navState}`}>
       <ul className="navUl">
         <li
           className={`navli ${activeSection === "home" ? "active" : ""}`}
