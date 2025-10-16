@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../Styles/Components/_contact.scss";
 
 export default function Contact() {
@@ -89,9 +90,9 @@ export default function Contact() {
         <button type="submit">Envoyer</button>
       </form>
       <div className="footer">
-        <a href="/Confidentialité" target="_blank" rel="noopener noreferrer">
+        <Link to="./Confidentialité" rel="noopener noreferrer">
           politique de confidentialité
-        </a>
+        </Link>
         <h3>Copyright &copy; 2025 Jessie Besset</h3>
       </div>
     </section>

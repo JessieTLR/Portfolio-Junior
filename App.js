@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
@@ -6,6 +7,7 @@ import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import NavBar from "./Components/NavBar";
 import "../src/Styles/Components/_app.scss";
+import Confidentialité from "./Pages/Confidentialité";
 import Footer from "./Pages/Footer";
 
 function App() {
@@ -65,11 +67,11 @@ function App() {
       const homeHeight = homeRef.current?.offsetHeight || 0;
 
       if (scrollY < homeHeight * 0.2) {
-        setNavState("home"); // visible à 38em
+        setNavState("home");
       } else if (scrollY >= homeHeight * 0.2 && scrollY < homeHeight * 0.9) {
-        setNavState("hidden"); // disparaît pendant le scroll de home
+        setNavState("hidden");
       } else if (scrollY >= homeHeight * 0.9) {
-        setNavState("top"); // fixée en haut dès about
+        setNavState("top");
       }
     };
 
@@ -78,34 +80,47 @@ function App() {
   }, []);
 
   return (
-    <>
-      <NavBar
-        activeSection={activeSection}
-        navState={navState}
-        scrollToHome={() => scrollToSection(homeRef)}
-        scrollToAbout={() => scrollToSection(aboutRef)}
-        scrollToProjects={() => scrollToSection(projectsRef)}
-        scrollToContact={() => scrollToSection(contactRef)}
-      />
+    <Router>
+      <Routes>
+        {/*Route principale (page complète sauf politique de confidentialité) */}
+        <Route
+          path="/"
+          element={
+            <>
+              <NavBar
+                activeSection={activeSection}
+                navState={navState}
+                scrollToHome={() => scrollToSection(homeRef)}
+                scrollToAbout={() => scrollToSection(aboutRef)}
+                scrollToProjects={() => scrollToSection(projectsRef)}
+                scrollToContact={() => scrollToSection(contactRef)}
+              />
 
-      <div className="parallax-container">
-        <section id="home" ref={homeRef}>
-          <Home />
-        </section>
+              <div className="parallax-container">
+                <section id="home" ref={homeRef}>
+                  <Home />
+                </section>
 
-        <section id="about" ref={aboutRef}>
-          <About />
-        </section>
+                <section id="about" ref={aboutRef}>
+                  <About />
+                </section>
 
-        <section id="projects" ref={projectsRef}>
-          <Projects />
-        </section>
+                <section id="projects" ref={projectsRef}>
+                  <Projects />
+                </section>
 
-        <section id="contact" ref={contactRef}>
-          <Contact />
-        </section>
-      </div>
-    </>
+                <section id="contact" ref={contactRef}>
+                  <Contact />
+                </section>
+              </div>
+            </>
+          }
+        />
+
+        {/* Route pour politique de confidentialité */}
+        <Route path="/Confidentialité" element={<Confidentialité />} />
+      </Routes>
+    </Router>
   );
 }
 

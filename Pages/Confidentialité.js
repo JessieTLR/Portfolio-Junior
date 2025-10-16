@@ -1,8 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "../Styles/Components/_confidentialité.scss";
 
 const Confidentialité = () => {
   return (
-    <div>
+    <div className="confidentialite-page">
+      <div className="back-button-container">
+        <Link to="/" className="back-button">
+          ← Revenir au portfolio
+        </Link>
+      </div>
       <h1>Politique de confidentialité</h1>
       <p>
         <strong>
