@@ -69,7 +69,7 @@ export default function Contact() {
             effectué avec mes informations. Pour en savoir plus, veuillez
             consulter la{" "}
             <a
-              href="/politique-de-confidentialite"
+              href="/Confidentialité"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -88,6 +88,12 @@ export default function Contact() {
 
         <button type="submit">Envoyer</button>
       </form>
+      <div className="footer">
+        <a href="/Confidentialité" target="_blank" rel="noopener noreferrer">
+          politique de confidentialité
+        </a>
+        <h3>Copyright &copy; 2025 Jessie Besset</h3>
+      </div>
     </section>
   );
 }

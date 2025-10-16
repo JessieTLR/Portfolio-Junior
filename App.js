@@ -6,6 +6,7 @@ import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import NavBar from "./Components/NavBar";
 import "../src/Styles/Components/_app.scss";
+import Footer from "./Pages/Footer";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
