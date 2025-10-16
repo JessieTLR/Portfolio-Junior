@@ -10,15 +10,13 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: white;
     text-align: center;
 
     &::before {
       content: "";
       position: absolute;
+      pointer-events: none;
       inset: 0;
       background: rgba(0, 0, 0, 0.25); // léger assombrissement pour lisibilité
       z-index: 0;

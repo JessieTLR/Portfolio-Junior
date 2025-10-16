@@ -71,15 +71,13 @@ li {
   position: relative;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: white;
   text-align: center;
 }
 .parallax-container section::before {
   content: "";
   position: absolute;
+  pointer-events: none;
   inset: 0;
   background: rgba(0, 0, 0, 0.25);
   z-index: 0;
@@ -311,18 +309,23 @@ body .header .right-container .projet:hover {
   }
 }
 
-.experiences {
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#about .experiences {
   width: 100vw;
   margin-top: 50px;
   text-align: center;
   position: relative;
 }
-.experiences h2 {
+#about .experiences h2 {
   position: relative;
   font-size: 2.5rem;
   padding-bottom: 40px;
 }
-.experiences h2::after {
+#about .experiences h2::after {
   content: "";
   position: absolute;
   bottom: 45px;
@@ -333,10 +336,10 @@ body .header .right-container .projet:hover {
   transform: translateX(-50%);
   z-index: -1;
 }
-.experiences li {
+#about .experiences li {
   margin-left: 20px;
 }
-.experiences .accordion-item {
+#about .experiences .accordion-item {
   width: 60%;
   margin: 0 auto;
   margin-bottom: 1rem;
@@ -345,10 +348,10 @@ body .header .right-container .projet:hover {
   background-color: #1a1a1a;
   transition: all 0.3s ease;
 }
-.experiences .accordion-item.active {
+#about .experiences .accordion-item.active {
   background-color: rgba(255, 92, 92, 0.1);
 }
-.experiences .accordion-item .accordion-header {
+#about .experiences .accordion-item .accordion-header {
   width: 100%;
   text-align: left;
   padding: 1rem 1.5rem;
@@ -363,27 +366,90 @@ body .header .right-container .projet:hover {
   align-items: center;
   transition: color 0.3s;
 }
-.experiences .accordion-item .accordion-header:hover {
+#about .experiences .accordion-item .accordion-header:hover {
   color: var(--color-hover);
 }
-.experiences .accordion-item .accordion-content {
+#about .experiences .accordion-item .accordion-content {
   padding: 0 15px 15px 15px;
   color: var(--color-text-secondary);
   font-size: 1rem;
   text-align: left;
 }
-.experiences .accordion-item .accordion-content .accordion-text {
+#about .experiences .accordion-item .accordion-content .accordion-text {
   line-height: 1.5;
 }
-.experiences .accordion-item .arrow {
+#about .experiences .accordion-item .arrow {
   color: var(--color-accent);
   transition: transform 0.3s;
   padding-left: 10px;
 }
-.experiences .accordion-item .arrow.active {
+#about .experiences .accordion-item .arrow.active {
   transform: rotate(180deg);
 }
 
-h1 {
-  color: red;
+.contact-section {
+  padding: 60px 20px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  text-align: center;
+  display: block;
+}
+.contact-section h2 {
+  margin-bottom: 30px;
+  color: var(--color-text);
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.contact-form .form-group label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--color-text-secondary);
+}
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  padding: 10px;
+  border: 2px solid var(--color-accent);
+  border-radius: 8px;
+  background-color: transparent;
+  color: var(--color-text);
+  resize: none;
+}
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-hover);
+}
+.contact-form .checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  text-align: left;
+}
+.contact-form .checkbox-container input[type=checkbox] {
+  margin-top: 5px;
+  cursor: pointer;
+}
+.contact-form .checkbox-container a {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+.contact-form .checkbox-container a:hover {
+  color: var(--color-hover);
+}
+.contact-form button {
+  align-self: center;
+  margin-top: 20px;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

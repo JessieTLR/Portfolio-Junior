@@ -1,0 +1,75 @@
+.contact-section {
+  padding: 60px 20px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  text-align: center;
+  display: block;
+
+  h2 {
+    margin-bottom: 30px;
+    color: var(--color-text);
+  }
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    label {
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: var(--color-text-secondary);
+    }
+
+    input,
+    textarea {
+      padding: 10px;
+      border: 2px solid var(--color-accent);
+      border-radius: 8px;
+      background-color: transparent;
+      color: var(--color-text);
+      resize: none;
+
+      &:focus {
+        outline: none;
+        border-color: var(--color-hover);
+      }
+    }
+  }
+
+  .checkbox-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.9rem;
+    text-align: left;
+
+    input[type="checkbox"] {
+      margin-top: 5px;
+      cursor: pointer;
+    }
+
+    a {
+      color: var(--color-accent);
+      text-decoration: underline;
+
+      &:hover {
+        color: var(--color-hover);
+      }
+    }
+  }
+
+  button {
+    align-self: center;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+}
