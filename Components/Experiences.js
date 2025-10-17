@@ -18,7 +18,7 @@ const Experiences = () => {
           </p>
           <p>
             <strong>Compétences : </strong>HTML, CSS, JavaScript, React en
-            formation continu
+            formation continue
           </p>
         </>
       ),

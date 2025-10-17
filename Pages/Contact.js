@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaGithub, FaEnvelope } from "react-icons/fa";
 import "../Styles/Components/_contact.scss";
 
 export default function Contact() {
@@ -14,14 +15,12 @@ export default function Contact() {
       return;
     }
 
-    // Récupération des valeurs du formulaire
     const form = e.target;
     const prenom = form.prenom.value;
     const nom = form.nom.value;
     const email = form.email.value;
     const message = form.message.value;
 
-    // Mailto
     const mailtoLink = `mailto:jessiebesset@hotmail.fr?subject=Contact%20de%20${prenom}%20${nom}&body=${encodeURIComponent(
       `${message}\n\nDe: ${prenom} ${nom} (${email})`
     )}`;
@@ -89,6 +88,30 @@ export default function Contact() {
 
         <button type="submit">Envoyer</button>
       </form>
+
+      {/* Section mail et github*/}
+      <div className="contact-links">
+        <a
+          href="mailto:jessiebesset@hotmail.fr"
+          className="contact-icon"
+          aria-label="Envoyer un mail"
+        >
+          <FaEnvelope />
+          <span>jessiebesset@hotmail.fr</span>
+        </a>
+
+        <a
+          href="https://github.com/JessieTLR"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-icon"
+          aria-label="Lien vers GitHub"
+        >
+          <FaGithub />
+          <span>Mon GitHub</span>
+        </a>
+      </div>
+
       <div className="footer">
         <Link to="./Confidentialité" rel="noopener noreferrer">
           politique de confidentialité

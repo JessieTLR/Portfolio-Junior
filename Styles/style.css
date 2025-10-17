@@ -231,7 +231,7 @@ body .header .right-container h1 .i-container .blinking-dot {
   height: 18px;
   background-color: var(--color-accent);
   border-radius: 50%;
-  animation: blink 2s infinite;
+  animation: blink 3s infinite;
 }
 @keyframes blink {
   0%, 50%, 100% {

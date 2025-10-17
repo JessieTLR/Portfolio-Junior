@@ -12,17 +12,6 @@
     height: 100vh;
     color: white;
     text-align: center;
-
-    &::before {
-      content: "";
-      position: absolute;
-      pointer-events: none;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.25); // léger assombrissement pour lisibilité
-      z-index: 0;
-    }
-
-   
   }
 
   // SECTION HOME
