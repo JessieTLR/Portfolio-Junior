@@ -1,0 +1,36 @@
+.parallax-container {
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+  min-height: 100vh;
+  height:auto;
+  scroll-behavior: smooth;
+
+  section {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    color: white;
+    text-align: center;
+  }
+
+  // SECTION HOME
+  #home {
+    background: url("../../../../Backgrounds/ROUGE.jpg") center/cover fixed no-repeat;
+  }
+
+  // SECTION ABOUT
+  #about {
+    background: linear-gradient(180deg, #0d0d0d, #1a1a1a);
+  }
+
+  // SECTION PROJECTS
+  #projects {
+    background: url("../../../../Backgrounds/ROUGE.jpg") center/cover fixed no-repeat;
+  }
+
+  // SECTION CONTACT
+  #contact {
+    background-color: #0f0f0f;
+  }
+}

@@ -1,0 +1,44 @@
+
+    .footer {
+  background-color: #1a1a1a; 
+  color: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+
+
+  a {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0 !important;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color:var(--color-hover);
+      text-decoration: underline;
+    }
+  }
+
+  h3 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 0.85rem;
+    opacity: 0.8;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1rem;
+
+    a {
+      margin-right: 1rem;
+    }
+  }
+}
