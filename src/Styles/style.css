@@ -81,7 +81,8 @@ li {
   background: linear-gradient(180deg, #0d0d0d, #1a1a1a);
 }
 .parallax-container #projects {
-  background: url("../../Assets/ROUGE.jpg") center/cover fixed no-repeat;
+  background: url("../../Assets/ROUGE.jpg") center/cover no-repeat;
+  background-attachment: scroll;
 }
 .parallax-container #contact {
   background-color: #0f0f0f;
@@ -335,7 +336,7 @@ body .header .right-container .projet:hover {
 }
 @media screen and (max-width: 462px) {
   body body {
-    height: auto !important;
+    height: 100dvh !important;
     overflow-x: hidden;
     background-position: center;
     background-size: cover;
@@ -345,7 +346,7 @@ body .header .right-container .projet:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: auto !important;
+    height: 100dvh !important;
     width: 100vw;
   }
   body .header .left-container {
@@ -640,21 +641,47 @@ body .header .right-container .projet:hover {
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 #contact .contact-form .contact-links .contact-icon {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: #222;
+  gap: 8px;
+  white-space: nowrap;
+  color: var(--color-text);
   font-size: 1rem;
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 #contact .contact-form .contact-links .contact-icon svg {
   font-size: 1.5rem;
+  flex-shrink: 0;
+}
+#contact .contact-form .contact-links .contact-icon:hover {
+  color: var(--color-accent);
 }
 
+@media (max-width: 480px) {
+  #contact .contact-section h2 {
+    font-size: 2rem;
+  }
+  #contact .contact-section h2::after {
+    width: 220px;
+    height: 8px;
+    bottom: 35px;
+  }
+  #contact .contact-form .contact-links {
+    gap: 1rem;
+  }
+  #contact .contact-form .contact-links .contact-icon {
+    font-size: 0.9rem;
+  }
+  #contact .contact-form .contact-links .contact-icon svg {
+    font-size: 1.2rem;
+  }
+}
 .footer {
   background-color: #1a1a1a;
   color: #f0f0f0;

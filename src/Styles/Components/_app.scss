@@ -26,7 +26,8 @@
 
   // SECTION PROJECTS
   #projects {
-    background: url("../../Assets/ROUGE.jpg") center/cover fixed no-repeat;
+    background: url("../../Assets/ROUGE.jpg") center/cover no-repeat;
+    background-attachment: scroll;
   }
 
   // SECTION CONTACT

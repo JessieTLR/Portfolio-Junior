@@ -182,7 +182,7 @@ body {
     }
     @media screen and (max-width: 462px) {
         body {
-            height: auto !important;
+            height: 100dvh !important;
             overflow-x: hidden;
             background-position: center;
             background-size: cover;
@@ -193,7 +193,7 @@ body {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: auto !important;
+            height: 100dvh !important;
             width: 100vw;
 
         .left-container {
