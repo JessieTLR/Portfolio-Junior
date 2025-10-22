@@ -70,26 +70,18 @@ li {
 .parallax-container section {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   color: white;
   text-align: center;
 }
-.parallax-container section::before {
-  content: "";
-  position: absolute;
-  pointer-events: none;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.25);
-  z-index: 0;
-}
 .parallax-container #home {
-  background: url("../../../../Backgrounds/ROUGE.jpg") center/cover fixed no-repeat;
+  background: url("../../Assets/ROUGE.jpg") center/cover fixed no-repeat;
 }
 .parallax-container #about {
   background: linear-gradient(180deg, #0d0d0d, #1a1a1a);
 }
 .parallax-container #projects {
-  background: url("../../../../Backgrounds/ROUGE.jpg") center/cover fixed no-repeat;
+  background: url("../../Assets/ROUGE.jpg") center/cover fixed no-repeat;
 }
 .parallax-container #contact {
   background-color: #0f0f0f;
@@ -104,7 +96,7 @@ li {
   transition: top 0.6s ease, opacity 0.6s ease, transform 0.6s ease, background 0.4s ease;
 }
 .nav--home {
-  top: 36em;
+  top: 60vh;
   opacity: 1;
   transform: translateY(0);
   background: transparent;
@@ -149,6 +141,34 @@ li {
   padding-bottom: 3px;
 }
 
+@media (max-width: 1120px) {
+  .nav {
+    padding: 1rem 0;
+  }
+  .nav .navUl {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav--home .navli {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 975px) {
+  .nav--home {
+    top: 70vh;
+  }
+}
+@media (max-width: 973px) {
+  .nav--home {
+    top: 70vh;
+  }
+}
+@media (max-width: 800px) {
+  .nav--home {
+    visibility: hidden;
+  }
+}
 body {
   position: relative;
   background-image: url("../../../../Backgrounds/ROUGE.jpg");
@@ -308,6 +328,80 @@ body .header .right-container .projet:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 }
+@media (max-width: 462px) {
+  body .header .right-container {
+    top: 28em;
+    width: 95vw;
+  }
+  body .header .right-container h1 {
+    font-size: 5rem;
+    line-height: 1.1;
+    padding: 10px;
+  }
+  body .header .right-container h1 span {
+    display: inline-block;
+  }
+  body .header .right-container h1 span.blinking-dot {
+    margin-left: 0px;
+    width: 15px;
+    height: 15px;
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    animation: blink 2s infinite;
+  }
+  body .header .right-container h1 .i-container {
+    position: relative;
+    display: inline-block;
+    font-style: normal;
+    line-height: 1;
+    color: transparent;
+    margin: -9px;
+  }
+  body .header .right-container h1 .i-container::before {
+    content: "";
+    position: absolute;
+    top: 0.32em;
+    left: 0.27em;
+    width: 0.12em;
+    height: 0.54em;
+    background-color: var(--color-text);
+    border-radius: 2px;
+  }
+  body .header .right-container h1 .i-container .blinking-dot {
+    position: absolute;
+    top: 0.04em;
+    left: 0.22em;
+    width: 17px;
+    height: 15px;
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    animation: blink 3s infinite;
+  }
+  body .header .right-container h2 {
+    font-size: 1.4rem;
+    margin: 20px;
+  }
+  body .header .right-container h2 span {
+    font-size: 1.8rem;
+  }
+  body .header .right-container h2 span::after {
+    width: 90px;
+    height: 8px;
+  }
+  body .header .right-container ul.languagesUl {
+    flex-wrap: wrap;
+  }
+  body .header .right-container ul.languagesUl li.languagesLi {
+    padding: 20px;
+    padding-bottom: 60px;
+  }
+  body .header .right-container .projet {
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
 
 #about {
   display: flex;
@@ -319,16 +413,18 @@ body .header .right-container .projet:hover {
   margin-top: 50px;
   text-align: center;
   position: relative;
+  z-index: 0;
 }
 #about .experiences h2 {
   position: relative;
   font-size: 2.5rem;
   padding-bottom: 40px;
+  z-index: 1;
 }
 #about .experiences h2::after {
   content: "";
   position: absolute;
-  bottom: 45px;
+  bottom: 42px;
   left: 50%;
   width: 300px;
   height: 12px;
@@ -392,11 +488,11 @@ body .header .right-container .projet:hover {
   color: #f0f0f0;
   text-align: center;
   padding: 20px;
+  margin: 20px;
   font-size: 0.9rem;
   display: flex;
   flex-direction: column !important;
   align-items: center;
-  margin: 0;
 }
 .footer a {
   color: var(--color-accent);
@@ -434,14 +530,27 @@ body .header .right-container .projet:hover {
   align-items: center;
 }
 #contact .contact-section {
-  padding: 100px 20px;
+  padding: 80px 20px;
   background-color: var(--color-bg);
   color: var(--color-text);
   text-align: center;
 }
 #contact .contact-section h2 {
-  margin-bottom: 50px;
-  color: var(--color-text);
+  position: relative;
+  font-size: 2.5rem;
+  padding-bottom: 40px;
+  z-index: 1;
+}
+#contact .contact-section h2::after {
+  content: "";
+  position: absolute;
+  bottom: 43px;
+  left: 50%;
+  width: 320px;
+  height: 12px;
+  background-color: var(--color-accent);
+  transform: translateX(-50%);
+  z-index: -1;
 }
 #contact .contact-form {
   max-width: 600px;
@@ -496,11 +605,31 @@ body .header .right-container .projet:hover {
 #contact .contact-form button {
   align-self: center;
   margin-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 1px;
+}
+#contact .contact-form .contact-links {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+#contact .contact-form .contact-links .contact-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #222;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+#contact .contact-form .contact-links .contact-icon svg {
+  font-size: 1.5rem;
 }
 
 .footer {
@@ -508,11 +637,11 @@ body .header .right-container .projet:hover {
   color: #f0f0f0;
   text-align: center;
   padding: 20px;
+  margin: 20px;
   font-size: 0.9rem;
   display: flex;
   flex-direction: column !important;
   align-items: center;
-  margin: 0;
 }
 .footer a {
   color: var(--color-accent);
