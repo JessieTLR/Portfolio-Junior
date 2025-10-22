@@ -171,7 +171,7 @@ li {
 }
 body {
   position: relative;
-  background-image: url("../../../../Backgrounds/ROUGE.jpg");
+  background-image: url("../../Assets/ROUGE.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
