@@ -16,25 +16,25 @@ const NavBar = ({
           className={`navli ${activeSection === "home" ? "active" : ""}`}
           onClick={scrollToHome}
         >
-          // Qui je suis
+          <span>//</span> Qui je suis
         </li>
         <li
           className={`navli ${activeSection === "about" ? "active" : ""}`}
           onClick={scrollToAbout}
         >
-          // Mon expérience
+          <span>//</span> Mon expérience
         </li>
         <li
           className={`navli ${activeSection === "projects" ? "active" : ""}`}
           onClick={scrollToProjects}
         >
-          // Mes projets
+          <span>//</span> Mes projets
         </li>
         <li
           className={`navli ${activeSection === "contact" ? "active" : ""}`}
           onClick={scrollToContact}
         >
-          // Contactez-moi
+          <span>//</span> Contactez-moi
         </li>
       </ul>
     </nav>
