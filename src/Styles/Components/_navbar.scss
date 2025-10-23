@@ -103,5 +103,26 @@
   }
 }
 
+@media (max-width: 401px) {
+  .nav {
+    .navUl {
+      gap: 1rem; 
+    }
 
+    .navli {
+      font-size: 1rem; 
+    }
 
+    &--home {
+      .navli {
+        font-size: 1rem; 
+      }
+    }
+
+    &--top {
+      .navli {
+        font-size: 1rem;
+      }
+    }
+  }
+}

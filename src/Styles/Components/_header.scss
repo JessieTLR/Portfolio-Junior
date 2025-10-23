@@ -85,10 +85,10 @@ body {
 
                     .blinking-dot {
                         position: absolute;
-                        top: 0.13em;
+                        top: 0.10em;
                         left: 0.24em;
                         width: 20px;
-                        height: 16px;
+                        height: 18px;
                         background-color: var(--color-accent);
                         border-radius: 50%;
                         animation: blink 1.8s infinite ease-in-out;

@@ -203,3 +203,19 @@
     }
   }
 }
+
+@media (max-width: 365px) {
+  .projects-section {
+    .projects-title {
+      font-size: 1.35rem;
+      padding-bottom: 30px;
+
+      &::after {
+        top:19px;
+        width: 310px; 
+        height: 7px;
+        bottom: 30px;
+      }
+    }
+  }
+}
