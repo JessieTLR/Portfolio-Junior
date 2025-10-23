@@ -29,7 +29,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="contact-section">
+    <section id="contact" className="contact-section">
       <h2>Contactez-moi</h2>
 
       <form className="contact-form" onSubmit={handleSubmit}>
@@ -89,7 +89,6 @@ export default function Contact() {
         <button type="submit">Envoyer</button>
       </form>
 
-      {/* Section mail et github*/}
       <div className="contact-links">
         <a
           href="mailto:jessiebesset@hotmail.fr"
