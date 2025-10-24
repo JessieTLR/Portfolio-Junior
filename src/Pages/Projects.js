@@ -14,7 +14,6 @@ const projects = [
       "Un site vitrine d'expérimentations JavaScript : logique, DOM et manipulations diverses.",
     techs: ["HTML", "SASS", "JavaScript"],
     github: "https://github.com/JessieTLR/mini-lab-JS",
-    demo: "?",
   },
   {
     title: "React Movie (API)",
@@ -23,7 +22,7 @@ const projects = [
       "Application React consommant une API de films pour afficher les dernières sorties, les favoris, les détails des fiches et mettre en favoris.",
     techs: ["React", "API REST", "SASS"],
     github: "https://github.com/JessieTLR/React-Movie-app",
-    demo: "?",
+    demo: "https://movieapp-jessieb.netlify.app/",
   },
   {
     title: "The Resto",
