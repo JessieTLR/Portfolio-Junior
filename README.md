@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# 🌸 Portfolio — Jessie Besset
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bienvenue sur mon portfolio de **Développeuse Web Front-End Junior**, créé avec **React**.  
+Ce projet présente mon parcours, mes compétences, et une sélection de projets récents développés dans le cadre de ma formation et de mon apprentissage personnel.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Démo en ligne
 
-### `npm test`
+👉 [Voir le site sur Netlify](https://ton-lien-netlify.netlify.app)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 💻 Technologies utilisées
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- ⚛️ **React** — framework principal  
+- 🎨 **SASS / SCSS** — styles modulaires et responsive  
+- 💡 **JavaScript (ES6+)**  
+- 🖼️ **React Icons** pour les icônes GitHub & liens externes  
+- 🌐 **Netlify** pour le déploiement
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🧠 Contenu principal
 
-### `npm run eject`
+### 🪴 Header
+Présentation du profil & navbar dynamique
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 💼 Experiences
+Composant avec un **accordéon interactif** listant :
+- La formation en développement web
+- L’expérience professionnelle en développement durable
+- Le parcours académique (Master)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🚧 Projects
+Section mettant en avant plusieurs projets :
+- **Mini-Lab JavaScript** – expérimentations DOM & JS
+- **React Movie** – app React consommant une API de films
+- **The Resto** – site statique HTML/CSS au design épuré
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Chaque projet comporte :
+- Une **image de présentation**
+- Une **description**
+- Les **technologies utilisées**
+- Des liens vers GitHub et la démo (Netlify)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
+🪶 Licence
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ce projet est librement consultable.
+Merci de ne pas reproduire le design intégral sans autorisation.
