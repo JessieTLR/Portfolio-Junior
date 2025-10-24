@@ -10,7 +10,7 @@ Ce projet présente mon parcours, mes compétences, et une sélection de projets
 
 ## 🚀 Démo en ligne
 
-👉 [Voir le site sur Netlify]([https://portfolio-jessiebesset.netlify.app/])
+👉 [Voir le site sur Netlify] ([https://portfolio-jessiebesset.netlify.app/])
 
 ---
 
