@@ -8,12 +8,15 @@ const Header = () => {
         <img src={Codefond} alt="code de fond"></img>
       </div>
       <div className="right-container">
-        <h1>
-          Jess
-          <span className="i-container">
-            i<span className="blinking-dot"></span>
+        <h1 className="header-title">
+          <span className="firstname">
+            Jess
+            <span className="i-container">
+              i<span className="blinking-dot"></span>
+            </span>
+            e
           </span>
-          e Besset
+          <span className="lastname"> Besset</span>
         </h1>
         <h2>
           Développeuse Web Front-End Junior - <span>REACT</span>{" "}
