@@ -21,13 +21,6 @@ const Header = () => {
         <h2>
           Développeuse Web Full Stack Junior - <span>REACT / PYTHON</span>{" "}
         </h2>
-        {/*<ul className="languagesUl">
-          <li className="languagesLi">HTML</li>
-          <li className="languagesLi">CSS (SASS)</li>
-          <li className="languagesLi">JavaScript</li>
-          <li className="languagesLi">React</li>
-        </ul>*/}
-        {/*<button className="projet">Voir mes projets</button>*/}
       </div>
     </div>
   );
