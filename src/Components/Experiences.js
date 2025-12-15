@@ -19,7 +19,8 @@ const Experiences = () => {
           </p>
           <p>
             <strong>Compétences : </strong>HTML, CSS, JavaScript, React en
-            formation continue, Python début et formation continue
+            formation continue, Python début et formation continue, Django en
+            prévision
           </p>
         </>
       ),
