@@ -19,7 +19,7 @@ const Header = () => {
           <span className="lastname"> Besset</span>
         </h1>
         <h2>
-          Développeuse Web Full Stack Junior - <span>REACT / PYTHON</span>{" "}
+          Développeuse Web Full Stack Junior - <span>REACT & PYTHON</span>{" "}
         </h2>
       </div>
     </div>
