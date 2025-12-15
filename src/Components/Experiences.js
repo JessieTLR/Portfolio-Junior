@@ -11,14 +11,15 @@ const Experiences = () => {
       details: (
         <>
           <p>
-            <strong>Organismes :</strong> OpenClassRoom / FromScratch
+            <strong>Organismes :</strong> OpenClassRoom / FromScratch /
+            Docstring
           </p>
           <p>
             <strong>Période :</strong> 2025 – aujourd'hui
           </p>
           <p>
             <strong>Compétences : </strong>HTML, CSS, JavaScript, React en
-            formation continue
+            formation continue, Python début et formation continue
           </p>
         </>
       ),
