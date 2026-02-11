@@ -21,8 +21,8 @@ export default function Contact() {
     const email = form.email.value;
     const message = form.message.value;
 
-    const mailtoLink = `mailto:jessiebesset@hotmail.fr?subject=Contact%20de%20${prenom}%20${nom}&body=${encodeURIComponent(
-      `${message}\n\nDe: ${prenom} ${nom} (${email})`
+    const mailtoLink = `mailto:belloc.dev@gmail.com?subject=Contact%20de%20${prenom}%20${nom}&body=${encodeURIComponent(
+      `${message}\n\nDe: ${prenom} ${nom} (${email})`,
     )}`;
 
     window.location.href = mailtoLink;
@@ -91,12 +91,12 @@ export default function Contact() {
 
       <div className="contact-links">
         <a
-          href="mailto:jessiebesset@hotmail.fr"
+          href="mailto:belloc.dev@gmail.com"
           className="contact-icon"
           aria-label="Envoyer un mail"
         >
           <FaEnvelope />
-          <span>jessiebesset@hotmail.fr</span>
+          <span>belloc.dev@gmail.com</span>
         </a>
 
         <a
@@ -115,7 +115,7 @@ export default function Contact() {
         <Link to="./Confidentialité" rel="noopener noreferrer">
           politique de confidentialité
         </Link>
-        <h3>Copyright &copy; 2025 Jessie Besset</h3>
+        <h3>Copyright &copy; 2025 Jessie Belloc</h3>
       </div>
     </section>
   );

@@ -6,7 +6,7 @@ const Footer = () => {
       <a href="/Confidentialité" target="_blank" rel="noopener noreferrer">
         politique de confidentialité
       </a>
-      <h3>Copyright &copy; 2025 Jessie Besset</h3>
+      <h3>Copyright &copy; 2025 Jessie Belloc</h3>
     </div>
   );
 };

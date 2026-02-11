@@ -16,7 +16,7 @@ const Header = () => {
             </span>
             e
           </span>
-          <span className="lastname"> Besset</span>
+          <span className="lastname"> Belloc</span>
         </h1>
         <h2>
           Développeuse Web Full Stack Junior - <span>REACT & PYTHON</span>{" "}
