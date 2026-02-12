@@ -8,6 +8,7 @@ import TheResto from "../Assets/Theresto.png";
 
 const projects = [
   {
+    // penser à noter les technos dans chaque projet
     title: "Mini-Lab JavaScript",
     image: MiniLab,
     description:
